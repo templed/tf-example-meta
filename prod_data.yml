@@ -12,18 +12,18 @@ remote_state:
   path_prefix: "production_example"
 
 eks:
-#  module_version: "git::git@github.com:templed/tf-example-eks?ref=v0.0.1"
-  module_version: "../../eks"
+  module_version: "git::git@github.com:templed/tf-example-eks?ref=v0.0.1"
+#  module_version: "../../eks"
   skipme: true
 
 ec2:
-#  module_version: "git::git@github.com:templed/tf-example-ec2?ref=v0.0.1"
-  module_version: "../../ec2"
+  module_version: "git::git@github.com:templed/tf-example-ec2?ref=v0.0.1"
+#  module_version: "../../ec2"
 
 kms:
-#  module_version: "git::git@github.com:templed/tf-example-kms?ref=v0.0.1"
-  module_version: "../../kms"
+  module_version: "git::git@github.com:templed/tf-example-kms?ref=v0.0.1"
+#  module_version: "../../kms"
 
 vpc:
-#  module_version: "git::git@github.com:templed/tf-example-kms?ref=v0.0.1"
-  module_version: "../../vpc"
+  module_version: "git::git@github.com:templed/tf-example-vpc?ref=v0.0.1"
+#  module_version: "../../vpc"
