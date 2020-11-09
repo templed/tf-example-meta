@@ -1,0 +1,29 @@
+aws_region: us-east-1
+aws_profile: production
+
+environment: production
+suffix: prod
+secrets: prod_secrets.enc.yml
+
+remote_state:
+  passthrough:
+    bucket: silly-test-bucket-for-doug
+    region: eu-west-1
+  path_prefix: "production_example"
+
+eks:
+#  module_version: "git::git@github.com:templed/tf-example-eks?ref=v0.0.1"
+  module_version: "../../eks"
+  skipme: true
+
+ec2:
+#  module_version: "git::git@github.com:templed/tf-example-ec2?ref=v0.0.1"
+  module_version: "../../ec2"
+
+kms:
+#  module_version: "git::git@github.com:templed/tf-example-kms?ref=v0.0.1"
+  module_version: "../../kms"
+
+vpc:
+#  module_version: "git::git@github.com:templed/tf-example-kms?ref=v0.0.1"
+  module_version: "../../vpc"

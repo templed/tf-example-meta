@@ -1,0 +1,3 @@
+creation_rules:
+    - path_regex: secrets.enc.yml$
+      kms: arn:aws:kms:us-east-1:899755783509:key/6871c190-8634-43ab-af84-3abf9e62dabd

@@ -1,0 +1,21 @@
+aws_region: us-east-1
+aws_profile: staging
+
+environment: staging
+suffix: stg
+secrets: stg_secrets.enc.yml
+
+remote_state:
+  passthrough:
+    bucket: silly-test-bucket-for-doug
+    region: eu-west-1
+  path_prefix: "staging_example"
+
+eks:
+  module_version: "v0.0.1"
+
+kms:
+  module_version: "v0.0.1"
+
+vpc:
+  module_version: "v0.0.1"
